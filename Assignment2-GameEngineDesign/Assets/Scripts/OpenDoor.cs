@@ -5,8 +5,20 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     private int keys = 0;
-    private int TotalKeys = 1;
+    public static int TotalKeys = 1;
+    public static bool DoorOpen = false; 
     private GameObject Door;
+
+    public static void SetTotalKey(int key)
+    {
+        TotalKeys = key;
+    }
+
+    public static bool GetDoorOpen()
+    {
+        return DoorOpen;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Key") //check for key tag
@@ -15,10 +27,11 @@ public class OpenDoor : MonoBehaviour
             keys++; //adds one to keys
         }
 
-        if (keys >= TotalKeys) //if you collect the total keys
+        if (keys == TotalKeys) //if you collect the total keys
         {
             Door = GameObject.FindGameObjectWithTag("Lock"); //finds the door
             Destroy(Door); //destroys it
+            DoorOpen = true;//sets door open to true so no more keys can be placed
         }
     }
     
