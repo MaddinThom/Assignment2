@@ -17,4 +17,8 @@ public class PlayerHealth : MonoBehaviour
         _health -= value;
         _text.text = _health.ToString();
     }
+    public int GetHealth()
+    {
+        return _health;
+    }
 }
