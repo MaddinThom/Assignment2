@@ -10,8 +10,6 @@ public class Enemy_movement : MonoBehaviour
     Transform target;
     NavMeshAgent agent;
 
-    private float attackTime = 5f;
-
 
     // Start is called before the first frame update
     void Start()
