@@ -18,7 +18,7 @@ public class PlaceKeyCommand : ICommand
     public void Execute()
     {
         keycount++;
-        OpenDoor.SetTotalKey(keycount);
+        OpenDoor.IncTotalKey();
         KeyPlacer.PlaceKey(position, Key);
     }
 
@@ -27,7 +27,7 @@ public class PlaceKeyCommand : ICommand
         if (keycount > 1) //prevents having 0 keys
         {
             keycount--;
-            OpenDoor.SetTotalKey(keycount);
+            OpenDoor.DecTotalKey();
         }
 
         KeyPlacer.RemoveKey(position);

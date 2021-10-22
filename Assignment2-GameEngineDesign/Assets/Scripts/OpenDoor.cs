@@ -9,9 +9,14 @@ public class OpenDoor : MonoBehaviour
     public static bool DoorOpen = false; 
     private GameObject Door;
 
-    public static void SetTotalKey(int key)
+    public static void IncTotalKey()
     {
-        TotalKeys = key;
+        TotalKeys++;
+    }
+
+    public static void DecTotalKey()
+    {
+        TotalKeys--;
     }
 
     public static bool GetDoorOpen()
