@@ -20,7 +20,7 @@ public class InputPath : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(1) && OpenDoor.GetDoorOpen() == false)
+        if (Input.GetMouseButtonDown(1))
         {
             Ray ray = maincam.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity))
@@ -29,7 +29,7 @@ public class InputPath : MonoBehaviour
                 ICommand command = new PlaceKeyCommand(hitInfo.point, keyPrefab);
 
 
-                CommandInvoker.AddCopmmand(command);
+                CommandInvoker.AddCommand(command);
             }
         }
     }

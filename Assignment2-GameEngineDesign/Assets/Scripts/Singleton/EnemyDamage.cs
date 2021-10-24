@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    private void OnCollisionStay(Collision other)
+      private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "enemy")
         {
