@@ -3,7 +3,7 @@ Game Description: The game we have built is based off of Roys assignment 1 and Q
 
 Controls: WASD to move, Right clicking on the path spawns a key, Z to undo the last key, R to redo the last key
 
-Screenshots/UML diagram link:
+Screenshots/UML diagram link:https://drive.google.com/drive/u/1/folders/1uS32l4_TjdNBYQTDbZ2ZMGpYsdIWT6-p?ths=true
 
 Video Demo Link:
 
