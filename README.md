@@ -1,4 +1,6 @@
 # Assignment2
+We chose Option A and our additional design pattern is a singleton pattern that controls the players health.
+
 Game Description: The game we have built is based off of Roys assignment 1 and Quiz. The goal is for the player to collect all the keys which will unlock the door so they can reach the exit pad to win. There are enemies in the game and if they touch you long enough to bring your health to zero you lose. You can also lose by falling off the world. 
 
 Controls: WASD to move, Right clicking on the path spawns a key, Z to undo the last key, R to redo the last key
