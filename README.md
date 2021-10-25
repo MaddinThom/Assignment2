@@ -9,7 +9,7 @@ Screenshots/UML diagram for the command pattern link:https://drive.google.com/dr
 
 Video Demo Link: https://youtu.be/uPdfvR7OFLs
 
-WebGL link:
+WebGL link: https://roywales.github.io/Assignment2/
 
 Development Team:
 Roy Wales - 100746617 - General Programmer and Level Design
