@@ -67,5 +67,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastEnemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3368945902040392115, guid: e642ad545385cc0498ba8d7179faf9ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e642ad545385cc0498ba8d7179faf9ba, type: 3}
