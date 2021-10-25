@@ -28,9 +28,10 @@ public class PlayerMovement : MonoBehaviour
         {
             gameObject.transform.forward = move;
         }
-
+        
         playerVelocity.y += gravityValue * Time.deltaTime; //adds the gravity(y) value
         controller.Move(playerVelocity * Time.deltaTime);  //applies gravity
+        
     }
 
 }
