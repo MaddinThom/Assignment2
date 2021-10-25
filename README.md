@@ -10,6 +10,7 @@ Screenshots/UML diagram for the command pattern link:https://drive.google.com/dr
 Video Demo Link: https://youtu.be/uPdfvR7OFLs
 
 WebGL link: https://roywales.github.io/Assignment2/
+We also have the build files in the EXE folder as well.
 
 Development Team:
 Roy Wales - 100746617 - General Programmer and Level Design
@@ -19,4 +20,4 @@ Harry Smith - 100744645 - Gameplay Programmer and Level Design
 Maddin Thom - 100751351 - Game Designer 
 
 Thrid Party Acknowledgement: We used Roys quiz base which used: the unity manual to clear a few things up https://docs.unity3d.com/Manual/index.html and also used the movement script that we created for our GDW game.
-In this assignment we used tutorial 4 and 5 to help with setting up patterns and the enemy prefab we created for our GDW game.
+In this assignment we used tutorial 4 and 5 to help with setting up patterns and we used the enemy prefab we created for our GDW game.
