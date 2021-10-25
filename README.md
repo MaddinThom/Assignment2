@@ -9,6 +9,8 @@ Screenshots/UML diagram for the command pattern link:https://drive.google.com/dr
 
 Video Demo Link: https://youtu.be/uPdfvR7OFLs
 
+Here is the link to our Mozilla Hubs: https://hub.link/nuF3sMD
+
 WebGL link: https://roywales.github.io/Assignment2/
 We also have the build files in the EXE folder as well.
 
