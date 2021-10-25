@@ -7,7 +7,7 @@ Controls: WASD to move, Right clicking on the path spawns a key, Z to undo the l
 
 Screenshots/UML diagram for the command pattern link:https://drive.google.com/drive/u/1/folders/1uS32l4_TjdNBYQTDbZ2ZMGpYsdIWT6-p?ths=true
 
-Video Demo Link:
+Video Demo Link: https://youtu.be/uPdfvR7OFLs
 
 WebGL link:
 
