@@ -6,14 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     private Vector3 playerVelocity;
-    public static int playerSpeed = 4;
+    public static int playerSpeed = 7;
     private float gravityValue = -3.0f;
-
-    public static void SetSpeed(int num) //sets the speed
-    {
-        playerSpeed = num;
-    }
-
 
     // Update is called once per frame
     void Update()
