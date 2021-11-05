@@ -1,25 +1,15 @@
-# Assignment2
-We chose Option A and our additional design pattern is a singleton pattern that controls the players health.
+# Assignment3
+I chose to implement object pool into my assignment 2 for the keys and enemies.
 
-Game Description: The game we have built is based off of Roys assignment 1 and Quiz. The goal is for the player to collect all the keys which will unlock the door so they can reach the exit pad to win. There are enemies in the game and if they touch you long enough to bring your health to zero you lose. You can also lose by falling off the world. 
+Game Description: The game I have built is based off assignment 2. The goal is for the player to collect all the keys which will unlock the door so they can reach the exit pad to win. There are enemies in the game and if they touch you long enough to bring your health to zero you lose. You can also lose by falling off the world.
 
-Controls: WASD to move, Right clicking on the path spawns a key, Z to undo the last key, R to redo the last key, 1 to spawn fast enemy, 2 to spawn slow enemy
+Using object pool is an improvement because it allows any number of keys or enemies needed be easily accessed and created 
 
-Screenshots/UML diagram for the command pattern link:https://drive.google.com/drive/u/1/folders/1uS32l4_TjdNBYQTDbZ2ZMGpYsdIWT6-p?ths=true
+Controls: WASD to move, Right clicking on the path spawns a key, 1 to spawn fast enemy, 2 to spawn slow enemy
 
-Video Demo Link: https://youtu.be/uPdfvR7OFLs
+UML Diagram and Screenshots Link: https://drive.google.com/drive/folders/1x53ZiZHQEE7zMR4SgyXVw1QvBBSHQybh?usp=sharing
 
-Here is the link to our Mozilla Hubs: https://hub.link/nuF3sMD
-
-WebGL link: https://roywales.github.io/Assignment2/
-We also have the build files in the EXE folder as well.
-
-Development Team:
-Roy Wales - 100746617 - General Programmer and Level Design
-
-Harry Smith - 100744645 - Gameplay Programmer and Level Design
-
-Maddin Thom - 100751351 - Game Designe
-
-Thrid Party Acknowledgement: We used Roys quiz base which used: the unity manual to clear a few things up https://docs.unity3d.com/Manual/index.html and also used the movement script that we created for our GDW game.
+Thrid Party Acknowledgement: I used my group's assignment 2 which used: the unity manual to clear a few things up https://docs.unity3d.com/Manual/index.html and also used the movement script that we created for our GDW game.
 In this assignment we used tutorial 4 and 5 to help with setting up patterns and we used the enemy prefab we created for our GDW game.
+
+Specific to this assignment: I used object pool code from the labs
