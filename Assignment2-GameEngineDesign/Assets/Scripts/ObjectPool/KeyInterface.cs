@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Simplly used to keep track of keys
+// Simply used to keep track of keys
 
 public interface KeyInterface
 {
