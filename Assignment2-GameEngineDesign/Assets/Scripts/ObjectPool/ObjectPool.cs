@@ -13,10 +13,12 @@ public class ObjectPool : MonoBehaviour {
         get;
         private set;
     } 
+
     void Awake() { 
         Instance = this;
         GrowPool();
     } 
+    // Get from the pool of objects
     public GameObject GetFromPool() 
     {
         if (objects.Count == 0)
@@ -29,6 +31,7 @@ public class ObjectPool : MonoBehaviour {
         return inst;
     }
 
+    // Add to the pool
     private void GrowPool()
     {
         for (int i = 0; i < 10; i++)
@@ -40,10 +43,4 @@ public class ObjectPool : MonoBehaviour {
             objects.Enqueue(objectToAdd);
         }
     }
-
-//public void AddToPool(GameObject instance)
-    //{ 
-        //instance.SetActive(false);
-        //availableObjects.Enqueue(instance);
-    //}
 }

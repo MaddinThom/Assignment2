@@ -6,7 +6,6 @@ public class PlaceKey : KeyInterface
 {
     Vector3 position;
     Transform key;
-    static List<Transform> keyT = new List<Transform>();
 
     public PlaceKey(Vector3 position, Transform key)
     {
@@ -17,30 +16,12 @@ public class PlaceKey : KeyInterface
     public void PlacingKey()
     {
         OpenDoor.IncTotalKey();
-        keyT.Add(key);
-        //KeyPlacer.PlaceKey(position, key);
+
+        // Place key from object pool
         if (OpenDoor.GetDoorOpen() == false) //only works for the door being closed
         {
             var keyObject = ObjectPool.Instance.GetFromPool();
             keyObject.transform.position = position;
         }
-    }
-
-    public void RemovingKey()
-    {
-        if (OpenDoor.GetTotalKeys() > 1) //prevents having 0 keys
-        {
-            OpenDoor.DecTotalKey();
-
-            //KeyPlacer.RemoveKey(position);
-            if (OpenDoor.GetDoorOpen() == false) //only works for the door being closed
-            {
-                Debug.Log("Yo: " + keyT.Count);
-                GameObject.Destroy(keyT[keyT.Count-1].gameObject);
-                keyT.RemoveAt(keyT.Count-1);
-            }
-        }
-
-
     }
 }
