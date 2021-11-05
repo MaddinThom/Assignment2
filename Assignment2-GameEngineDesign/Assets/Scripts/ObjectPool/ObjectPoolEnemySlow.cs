@@ -2,24 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPool : MonoBehaviour {
+public class ObjectPoolEnemySlow : MonoBehaviour
+{
     [SerializeField]
     private GameObject obj;
 
     private Queue<GameObject> objects = new Queue<GameObject>();
 
-    public static ObjectPool Instance 
+    public static ObjectPoolEnemySlow Instance
     {
         get;
         private set;
-    } 
+    }
 
-    void Awake() { 
+    void Awake()
+    {
         Instance = this;
         GrowPool();
-    } 
+    }
     // Get from the pool of objects
-    public GameObject GetFromPool() 
+    public GameObject GetFromPool()
     {
         if (objects.Count == 0)
         {
@@ -38,7 +40,6 @@ public class ObjectPool : MonoBehaviour {
         {
             var objectToAdd = Instantiate(obj);
             objectToAdd.transform.SetParent(transform);
-
             objectToAdd.SetActive(false);
             objects.Enqueue(objectToAdd);
         }

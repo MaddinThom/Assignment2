@@ -2,24 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPool : MonoBehaviour {
+public class ObjectPoolEnemyFast : MonoBehaviour
+{
     [SerializeField]
     private GameObject obj;
 
     private Queue<GameObject> objects = new Queue<GameObject>();
 
-    public static ObjectPool Instance 
+    public static ObjectPoolEnemyFast Instance
     {
         get;
         private set;
-    } 
+    }
 
-    void Awake() { 
+    void Awake()
+    {
         Instance = this;
         GrowPool();
-    } 
+    }
     // Get from the pool of objects
-    public GameObject GetFromPool() 
+    public GameObject GetFromPool()
     {
         if (objects.Count == 0)
         {
